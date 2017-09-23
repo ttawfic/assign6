@@ -1,6 +1,7 @@
 angular.module('listings').factory('Listings', ['$http', 
   function($http) {
     var methods = {
+      
       getAll: function() {
         return $http.get('http://serene-everglades-86457.herokuapp.com/api/listings');
       },
